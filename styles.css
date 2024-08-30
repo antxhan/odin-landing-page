@@ -184,6 +184,32 @@ h2 {
   margin-bottom: 0.5rem;
 }
 
+/* QUOTE ------------------------------------------ */
+
+.quote {
+  background-color: var(--clr-neutral-600);
+  color: var(--clr-neutral-100);
+  display: flex;
+  justify-content: center;
+  padding-block: 8rem;
+}
+
+.quote > .container {
+  max-width: 800px;
+}
+
+.quote em {
+  font-size: var(--fs-xxlarge);
+  display: block;
+  margin-block-end: 1rem;
+}
+
+.quote b {
+  font-size: var(--fs-xlarge);
+  display: block;
+  text-align: right;
+}
+
 /* UTILITY ------------------------------------------ */
 
 .container {
