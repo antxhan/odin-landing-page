@@ -92,7 +92,7 @@ main {
   background-color: var(--clr-neutral-100);
   display: flex;
   justify-content: center;
-  padding-block: 6rem;
+  padding-block: 7rem;
 }
 
 main > .container {
@@ -208,6 +208,44 @@ h2 {
   font-size: var(--fs-xlarge);
   display: block;
   text-align: right;
+}
+
+/* CTA ------------------------------------------ */
+
+.cta {
+  display: flex;
+  justify-content: center;
+  padding-block: 7rem;
+}
+
+.cta > .container {
+  width: 100%;
+  background-color: var(--clr-primary-blue);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta__container {
+  display: flex;
+  padding: 3rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: min(850px, 100%);
+}
+
+.cta strong {
+  font-size: var(--fs-xlarge);
+}
+
+.cta p {
+  font-size: var(--fs-large);
+}
+
+.cta button {
+  border: 2px solid var(--clr-neutral-900);
 }
 
 /* UTILITY ------------------------------------------ */
