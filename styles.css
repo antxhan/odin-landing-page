@@ -16,6 +16,8 @@
   /* --fs-normal: 16px; */
 }
 
+/* GLOBAL ------------------------------------------ */
+
 *,
 *::before,
 *::after {
@@ -32,6 +34,24 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: var(--clr-primary-blue);
+  color: var(--clr-neutral-900);
+  font-size: var(--fs-large);
+  font-weight: var(--fw-bold);
+  border: none;
+  border-radius: 0.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 /* HEADER ------------------------------------------ */
@@ -101,8 +121,6 @@ main > .container {
 }
 
 .hero__image-container > img {
-  display: block;
-  max-width: 100%;
   aspect-ratio: 2.21 / 1;
   object-fit: cover;
   z-index: 1;
@@ -115,24 +133,55 @@ main > .container {
 h1 {
   color: var(--clr-neutral-900);
   font-size: var(--fs-xxxlarge);
-  font-weight: 900;
-}
-
-button {
-  padding: 0.5rem 2rem;
-  background-color: var(--clr-primary-blue);
-  color: var(--clr-neutral-900);
-  font-size: var(--fs-large);
-  font-weight: 900;
-  border: none;
-  border-radius: 0.5rem;
-  &:hover {
-    cursor: pointer;
-  }
+  font-weight: var(--fw-bold);
 }
 
 main button {
   margin-block: 1rem;
+}
+
+/* INFO ------------------------------------------ */
+
+.info {
+  display: flex;
+  justify-content: center;
+  padding-block-end: 8rem;
+}
+
+.info > .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-xxlarge);
+  margin-block: 2rem;
+  font-weight: var(--fw-bold);
+}
+
+.info__image-row {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.info__image-container {
+  max-width: 10.5rem;
+  color: var(--clr-neutral-100);
+  font-size: var(--fs-large);
+}
+
+.info__image-container > img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 4px solid var(--clr-primary-blue);
+  border-radius: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 /* UTILITY ------------------------------------------ */
