@@ -13,7 +13,6 @@
   --fs-xxlarge: 36px;
   --fs-xlarge: 24px;
   --fs-large: 18px;
-  /* --fs-normal: 16px; */
 }
 
 /* GLOBAL ------------------------------------------ */
@@ -29,6 +28,7 @@
 body {
   color: var(--clr-neutral-600);
   font-family: Roboto;
+  font-size: var(--fs-large);
 }
 
 a {
@@ -54,12 +54,23 @@ img {
   max-width: 100%;
 }
 
+header,
+main,
+section,
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+main,
+section {
+  padding-block: 7rem;
+}
+
 /* HEADER ------------------------------------------ */
 
 header {
   background-color: var(--clr-neutral-100);
-  display: flex;
-  justify-content: center;
   padding-block: 1rem;
 }
 
@@ -77,10 +88,6 @@ nav > ul {
   gap: 2rem;
 }
 
-nav > ul > li > a {
-  font-size: var(--fs-large);
-}
-
 h3 {
   color: var(--clr-neutral-900);
   font-size: var(--fs-xlarge);
@@ -90,9 +97,6 @@ h3 {
 
 main {
   background-color: var(--clr-neutral-100);
-  display: flex;
-  justify-content: center;
-  padding-block: 7rem;
 }
 
 main > .container {
@@ -105,18 +109,11 @@ main > .container {
   }
 }
 
-.hero__info {
-  & p {
-    font-size: var(--fs-large);
-  }
-}
-
 .hero__image-container {
   background-color: #6e747c;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--fs-large);
   min-width: min(100%, 520px);
 }
 
@@ -141,12 +138,6 @@ main button {
 }
 
 /* INFO ------------------------------------------ */
-
-.info {
-  display: flex;
-  justify-content: center;
-  padding-block-end: 8rem;
-}
 
 .info > .container {
   width: 100%;
@@ -173,7 +164,6 @@ h2 {
 .info__image-container {
   max-width: 10.5rem;
   color: var(--clr-neutral-100);
-  font-size: var(--fs-large);
 }
 
 .info__image-container > img {
@@ -189,9 +179,6 @@ h2 {
 .quote {
   background-color: var(--clr-neutral-600);
   color: var(--clr-neutral-100);
-  display: flex;
-  justify-content: center;
-  padding-block: 8rem;
 }
 
 .quote > .container {
@@ -211,12 +198,6 @@ h2 {
 }
 
 /* CTA ------------------------------------------ */
-
-.cta {
-  display: flex;
-  justify-content: center;
-  padding-block: 7rem;
-}
 
 .cta > .container {
   width: 100%;
@@ -240,10 +221,6 @@ h2 {
   font-size: var(--fs-xlarge);
 }
 
-.cta p {
-  font-size: var(--fs-large);
-}
-
 .cta button {
   border: 2px solid var(--clr-neutral-900);
 }
@@ -253,18 +230,12 @@ h2 {
 footer {
   background-color: var(--clr-neutral-100);
   padding-block: 3rem;
-  display: flex;
-  justify-content: center;
 }
 
 footer > .container {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-footer p {
-  font-size: var(--fs-large);
 }
 
 /* UTILITY ------------------------------------------ */
